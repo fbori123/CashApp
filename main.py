@@ -42,7 +42,7 @@ def compound_interest():
     while age <= 60:
         savings += investment_amount
         savings *= (1 + annual_interest_rate)
-        print(f"{age}\t{investment_amount}\t${round(savings, 2)}")
+        print(f"{age}\t{investment_amount}\t${round(savings, 3)}")
         age += 1
 
 choice = 0
