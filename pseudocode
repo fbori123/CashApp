@@ -1,0 +1,49 @@
+BEGIN CashApp
+    Print "Welcome to Cash App!"
+    Print "This app will help you develop better financial habits."
+
+    FUNCTION money_buckets()
+        Get income
+        Calculate bucket amounts
+        Display bucket amounts
+    END money_buckets()
+
+    FUNCTION compound_interest()
+        Get starting age
+        Get the average annual interest rate
+        Get the amount of investment
+
+        age = start_age
+        savings = 0
+
+        Print "Compound Interest Projection:"
+        Print "Age Investment Savings"
+
+        WHILE age <= 60:
+            Calculate savings
+            Calculate age
+            Display age, amount of investment and savings (in a table format)
+        ENDWHILE
+    END compound_interest()
+
+choice = 0
+WHILE choice != ""
+    Print "Please choose an option:
+    Print "1. Money Buckets"
+    Print "Learning this strategy is to help you to live on 60% of your income and grow your wealth."
+    Print "2. Compound Interest Projection"
+    Print "This function shows the development of your investment."
+
+    Get choice
+        IF choice == 1 THEN
+            BEGIN money_buckets()
+        ELSEIF choice == 2 THEN
+            BEGIN compound_interest()
+        ENDIF
+
+        Get restart
+        Print "Do you want to restart? (yes/no): "
+            IF restart != "yes"
+                ENDWHILE
+Print "Thank you for using Cash App! Goodbye!"
+END CashApp
